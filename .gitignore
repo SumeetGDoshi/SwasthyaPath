@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.pyo
+*.pyo
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+*.egg-info/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Misc
+*.bak
+*.tmp
+.turbo/
+

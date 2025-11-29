@@ -1,0 +1,28 @@
+# FastAPI and server
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+
+# AI/ML
+anthropic>=0.18.0
+
+# Database
+supabase>=2.3.0
+
+# Image processing
+Pillow>=10.4.0
+python-magic>=0.4.27
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+httpx>=0.24.0
+
+# Authentication
+passlib[bcrypt]>=1.7.4
+python-jose[cryptography]>=3.3.0
+
+# PDF handling
+PyPDF2>=3.0.0
+pdf2image>=1.16.0
+
