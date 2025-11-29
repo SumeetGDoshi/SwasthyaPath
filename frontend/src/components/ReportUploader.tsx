@@ -75,7 +75,7 @@ export function ReportUploader({
       "application/pdf": [".pdf"],
     },
     maxFiles: 1,
-    noClick: false,
+    noClick: true,  // Prevent double dialog - only use the Browse Files button
     noKeyboard: false,
   });
 
@@ -152,23 +152,17 @@ export function ReportUploader({
               </h3>
 
               <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
-                Drag and drop your report, or click to browse
+                Drag and drop your report, or click the button below
               </p>
 
               <div className="flex flex-col gap-2 sm:flex-row">
-                <Button
-                  type="button"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    open();
-                  }}
-                >
+                <Button type="button" onClick={open}>
                   <FileImage className="mr-2 h-4 w-4" />
                   Browse Files
                 </Button>
 
                 {/* Mobile camera capture */}
-                <div className="sm:hidden" onClick={(e) => e.stopPropagation()}>
+                <div className="sm:hidden">
                   <label htmlFor="camera-input">
                     <Button type="button" variant="outline" asChild>
                       <span>
