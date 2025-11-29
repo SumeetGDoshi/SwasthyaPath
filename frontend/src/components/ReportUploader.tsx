@@ -156,13 +156,19 @@ export function ReportUploader({
               </p>
 
               <div className="flex flex-col gap-2 sm:flex-row">
-                <Button type="button" onClick={open}>
+                <Button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    open();
+                  }}
+                >
                   <FileImage className="mr-2 h-4 w-4" />
                   Browse Files
                 </Button>
 
                 {/* Mobile camera capture */}
-                <div className="sm:hidden">
+                <div className="sm:hidden" onClick={(e) => e.stopPropagation()}>
                   <label htmlFor="camera-input">
                     <Button type="button" variant="outline" asChild>
                       <span>
