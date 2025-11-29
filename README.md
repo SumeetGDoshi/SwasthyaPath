@@ -1,6 +1,6 @@
 # Swasthya Path - Layer 1: Report Intelligence Agent
 
-AI-powered medical report analysis and duplicate detection for Indian healthcare.
+AI-powered medical report analysis and duplicate detection for Indian healthcare. [Agent orchestration is still underway meanwhile using mockdata and mockllm calls to simulate the real scenario]
 
 ![Swasthya Path](https://img.shields.io/badge/Hackathon-2024-emerald)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
